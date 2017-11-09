@@ -14,6 +14,11 @@
             <h2>Login</h2>
           </div>
           <div class="card-body">
+            <?php if (!empty($message)) : ?>
+              <div class="alert alert-success">
+                <?php echo $message; ?>
+              </div>
+            <?php endif; ?>
             <form action="" method="post">
               <div class="form-group">
                   <label for="email">Email</label>

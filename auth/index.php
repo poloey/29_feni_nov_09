@@ -1,5 +1,3 @@
 <?php
-require 'core/Db.php';
-require 'config.php';
-$connection = Db::connection($dbconfig);
+require 'core/boot.php';
 require 'controllers/indexController.php';

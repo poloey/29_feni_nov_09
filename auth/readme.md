@@ -1,3 +1,5 @@
-### for rename file usign bash regex
-rename 's/.php/Controller.php/' *.php
+# Class 26 
+Today We've learned about MVC Pattern. MVC pattern help us to organize our code. 
+
+# Single responsibility principle
 

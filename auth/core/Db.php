@@ -1,6 +1,7 @@
 <?php
 class Db {
-  public static function connection($dbconfig)  {
-    return new PDO($dbconfig['dsn'], $dbconfig['username'], $dbconfig['password'], $dbconfig['options']);
+  public static function connection ($config) {
+    return new PDO($config['dsn'],$config['user'], $config['password'], $config['options']  );
   }
 }
+

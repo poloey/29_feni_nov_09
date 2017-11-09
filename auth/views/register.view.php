@@ -14,18 +14,23 @@
             <h2>Register Here</h2>
           </div>
           <div class="card-body">
+            <?php if (!empty($message)) : ?>
+              <div class="alert alert-success">
+                <?php echo $message; ?>
+              </div>
+            <?php endif; ?>
             <form action="" method="post">
               <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" name="name" id="name" class="form-control">
+                  <input type="text" name="name" id="name" class="form-control" required>
               </div>
               <div class="form-group">
                   <label for="email">Email</label>
-                  <input type="email" name="email" id="email" class="form-control">
+                  <input type="email" name="email" id="email" class="form-control" required>
               </div>
               <div class="form-group">
                   <label for="password">Password</label>
-                  <input type="password" name="password" id="password" class="form-control">
+                  <input type="password" name="password" id="password" class="form-control" required>
               </div>
 
               <div class="form-group">

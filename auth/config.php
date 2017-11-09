@@ -1,7 +1,7 @@
 <?php
-$dbconfig = [
+$config = [
   'dsn' => 'mysql:host=localhost;dbname=auth',
-  'username' => 'root',
+  'user' => 'root',
   'password' => '',
-  'options' => []
+  'options' =>  []
 ];
